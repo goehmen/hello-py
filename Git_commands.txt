@@ -1,0 +1,48 @@
+GIT
+
+1.  go to /deployments-aws (deployments-vcenter) -->  % git add -p (make sure no files are outside of my acceptance area)
+2.  git commit -m <add comment>
+3. git status
+  3.a if clean skip to 4
+  3.b if not: clean git stash
+4.  git push origin master
+5. git stash pop (only if 3.b done)
+
+
+other
+1.  keep deployments aws & vsphere up to date
+2.  move keys off to dropbox
+3.  put passphrase in front of private key
+4.  
+
+
+need to know:
+git clone
+git add
+git pull
+git status
+git push
+git checkout <path> (which could be '.')
+git clean --force
+
+to refresh dir like dummy
+1 git clean --force
+2 git pull
+
+======
+dr. dobbs tutorial
+http://www.drdobbs.com/tools/getting-started-with-git-the-fundamental/240160261?pgno=1
+======
+
+1.  Fork a repo on github.com
+2.  git clone https://github.com/goehmen/<proj_name>.git  #clone YOUR fork in cli
+3.  git log  #lists commits
+      - git show <5 char hash> #inspect commit contents
+4.  git status
+      - .gitignore file
+5.  git add <file>/<dir>/.  # staging commits
+6.  git commit -m "comment-here" #packaging up commits
+7.  git push origin master #push changes to master on github
+8.  git log #shows local commit log
+9.  git log origin/master #shows commit log on github/origin
+10.  git pull #commits changes from origin to local branch
