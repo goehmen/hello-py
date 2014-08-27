@@ -92,7 +92,7 @@ if __name__ == '__main__':
     bob.delay = 0.001
 
     # draw a circle centered on the origin
-    radius = 100
+    radius = 250
     pu(bob)
     fd(bob, radius)
     lt(bob)
